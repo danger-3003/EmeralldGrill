@@ -1,0 +1,54 @@
+#content
+{
+    animation-name: leftmove;
+    animation-duration: 2s ;
+    overflow: hidden;
+}
+@keyframes leftmove
+{
+    0%
+    {
+        right: 100px;
+        opacity: 0;
+    }
+    100%
+    {
+        right: 0px;
+        opacity: 1;
+    }
+}
+#our_menu
+{
+    animation-name: rightmove;
+    animation-duration: 2s;
+    overflow: hidden;
+}
+@keyframes rightmove
+{
+    0%
+    {
+        right: -30%;
+        opacity: 0;
+    }
+    100%
+    {
+        right: 0px;
+        opacity: 1;
+    }
+}
+@media (max-width:639px) and (min-width:400px)
+{
+    .cards
+    {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+@media (max-width:977px)
+{
+    #Feedback
+    {
+        border-left: 0px;
+        padding-right: 1.75rem;
+        border-top-width: 2px;
+    }
+}
